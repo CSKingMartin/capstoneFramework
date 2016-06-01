@@ -23,7 +23,7 @@ gulp.task('nunjucks', function() {
 
 	
 	// output files in gulpTest
-	.pipe(gulp.dest('app'));
+	.pipe(gulp.dest('dist'));
 
 
 });
