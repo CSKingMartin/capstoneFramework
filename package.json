@@ -1,0 +1,27 @@
+{
+  "name": "framework_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "node-sass": "^3.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nunjucks-render": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cskingmartin/frameworkProject.git"
+  },
+  "author": "cwells",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cskingmartin/frameworkProject/issues"
+  },
+  "homepage": "https://github.com/cskingmartin/frameworkProject#readme"
+}
