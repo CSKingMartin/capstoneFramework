@@ -1,16 +1,19 @@
+$primColor: #349155;
+$secColor: #84ba9f;
+
 nav {
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		background-color: #43a85b;
+		background-color: $primColor;
 		overflow: hidden;
 	}
 
 	li {
 		display: inline;
 		padding: 10px;
-		background-color: #43a85b;
+		background-color: $primColor;
 	
 		float: left;
 
@@ -25,9 +28,12 @@ nav {
 
 #content {
 	text-align: left;
-	padding: 20px;
-	margin: auto;
+	padding: 5px;
+	margin: 10px;
 	width: 100%;
+
+	border-style: solid;
+	border-color: red;
 
 	position: relative;
 }
@@ -40,6 +46,11 @@ nav {
 	padding-right: 10px;
 
 	position: relative;
+
+	background-color: $secColor;
+
+	border-style: solid;
+	border-color: red;
 }
 
 #content-right {
@@ -50,12 +61,19 @@ nav {
 	padding-right: 20px;
 
 	position: relative;
+
+	background-color: $secColor;
+
+	border-style: solid;
+	border-color: red;
+
+	
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
-	background-color: #43a85b;
+	background-color: $primColor;
 
 	width: 100%;
 

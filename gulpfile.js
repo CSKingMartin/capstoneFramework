@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 var sass = require('gulp-sass')
 var sequence = require('run-sequence');
+var browserSync = require('browser-sync');
 
 gulp.task('test', function(){
 	console.log('Congratulations! Gulp is working correctly!');
@@ -18,14 +19,11 @@ gulp.task('nunjucks', function() {
 		path: ['app/templates'],
 		data: { css_path: 'app/templates/style.css'}
 	}))
-
-	// .on('error', function (err) {
-	// 	console.log('error');
-	// })
-
-	
 	// output files in gulpTest
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('dist'))
+	.pipe(browserSync.reload({
+		stream: true
+	}));
 
 
 });
@@ -35,17 +33,34 @@ gulp.task('styles', function(){
 
 	console.log('runnin gulp-sass')
 
-	gulp.src('app/templates/sass/**/*.scss')
+	return gulp.src('app/templates/sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist'))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
 });
 
-//watch task
+//default task
 gulp.task('default', function(done) {
 
 	console.log('running default')
 
-	sequence('nunjucks', 'styles', done);
+	sequence('browserSync','nunjucks', 'styles', done);
 	
 });
 
+//watch task
+gulp.task('watch', ['default'], function(){
+	gulp.watch('app/templates/sass/**/*.scss',['default']);
+	gulp.watch('app/pages/**/*.html', ['default'])
+});
+
+//browsersync
+gulp.task('browserSync', function()	{
+	browserSync({
+		server: {
+			baseDir: 'dist'
+		}
+	})
+});
