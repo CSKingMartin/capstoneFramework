@@ -33,7 +33,7 @@ gulp.task('styles', function(){
 
 	console.log('runnin gulp-sass')
 
-	return gulp.src('app/templates/sass/**/*.scss')
+	return gulp.src('app/templates/sass/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('dist'))
 		.pipe(browserSync.reload({
