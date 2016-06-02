@@ -1,7 +1,7 @@
 {
   "name": "framework_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "My initial project at ConnectiveDX, building a personal custom web-framework.",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
