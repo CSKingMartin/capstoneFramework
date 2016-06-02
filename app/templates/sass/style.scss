@@ -1,5 +1,14 @@
 $primColor: #349155;
 $secColor: #84ba9f;
+$font: Tahoma;
+
+@import "./node_modules/scss-flex-grid/_flex-grid.scss";
+
+
+body {
+	font-size: 100%;
+	font-family: Tahoma;
+}
 
 nav {
 	ul {
@@ -39,14 +48,11 @@ nav {
 }
 
 #content {
-
 	text-align: left;
 	padding: 20px;
-	margin: 30px;
+	margin: 10px;
 	border-radius: 5px;
 	background-color: $secColor;
-	font-family: Tahoma;
-
 }
 
 #content-main {
@@ -60,13 +66,6 @@ nav {
 	p{
 		font-size: 14pt;
 	}
-}
-
-#content-med {
-	@extend #content;
-
-	max-width: 43%;
-	
 }
 
 footer {

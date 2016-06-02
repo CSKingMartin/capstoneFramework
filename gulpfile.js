@@ -16,7 +16,7 @@ gulp.task('nunjucks', function() {
 	return gulp.src('app/pages/**/*.html')
 	// render template with nunjucks
 	.pipe(nunjucksRender({
-		path: ['app/templates'],
+		path: ['app/templates/','app/templates/partials/'],
 		data: { css_path: 'app/templates/style.css'}
 	}))
 	// output files in gulpTest
@@ -31,7 +31,7 @@ gulp.task('nunjucks', function() {
 //does sass
 gulp.task('styles', function(){
 
-	console.log('runnin gulp-sass')
+	console.log('running gulp-sass')
 
 	return gulp.src('app/templates/sass/*.scss')
 		.pipe(sass().on('error', sass.logError))
@@ -46,13 +46,13 @@ gulp.task('default', function(done) {
 
 	console.log('running default')
 
-	sequence('browserSync','nunjucks', 'styles', done);
+	sequence('nunjucks', 'styles','browserSync', done);
 	
 });
 
 //watch task
 gulp.task('watch', ['default'], function(){
-	gulp.watch('app/templates/sass/**/*.scss',['default']);
+	gulp.watch('app/templates/**/*.+(scss|html)',['default']);
 	gulp.watch('app/pages/**/*.html', ['default'])
 });
 

@@ -1,46 +1,24 @@
 {% extends "layout.html" %}
 
 {% block content %}
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">New</a></li>
-			<li><a href="#">Contact</a></li>
-			<li style="float:right"><a href="#">About</a></li>
-		</ul>
-	</nav>
-
-	<!-- <div id="aside">
-		<h1>This is an Aside</h1>
-
-	</div> -->
-
-	<div id="content-main">
-		<h1>Welcome to this test website!</h1>
-		<p>While this website may not have a lot of content that makes it extremely relevant or revolutionary, the web framework I'm building and the tools that it uses are extremely powerful. </p>
-		
-	</div>
-
-	<div id="content-med" style="float: left">
-		<h2>Content on the left!</h2>
-		<p>Does this project work?!</p>
-		<br>
-		<p>Fill the space, fill the space,  fill the space, fill the space, fill the space, fill the space, fill the space.
-	</div>
-
-	<div id="content-med" style="float: right">
-		<h2>Content on the right!</h2>
-		<p>I think it does not!</p>
-		<br>
-		<p>Fill the space, fill the space,  fill the space, fill the space, fill the space, fill the space, fill the space.
-	</div>
-
 	
+	<div class="row">
+		<div class="col-xs-12 col-md-3">
+			<div id="content">
+				<h2>Content on the left!</h2>
+				<p>This is now mainly a test for flexbox grid. I want to see how the text wraps and changes as the size of the page also changes.</p>
 
+				<p>Fill the space, fill the space, fill the space, fill the space, fill the space, fill the space.</p>
 
+			</div>
+		</div>
 
-	<footer>
-		<p>Copyright &copy Conner Wells, 2016</p>
-
-	</footer>
+		<div class="col-xs-12 col-md-9">
+			<div id="content">
+				<h2>Content on the right!</h2>
+				<p>Fill the space, fill the space, fill the space, fill the space, fill the space, fill the space, fill the space, fill the space, fill the space.</p>
+			</div>
+		</div>
+	</div>
+	
 {% endblock %}
