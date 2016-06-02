@@ -13,7 +13,7 @@ https://github.com/connectivedx/Phoenix
 <br>
 As of right now, this project includes and implements:
   <ul>
-    <li>Gulp -- a build system used to compile the different tools and resources involved in my framework. In particular I use a lot of the piping/streaming capabilities to run tasks compiling SASS, and minifying code. I also use the Watch feature of Gulp in tandem with browserSync to see changes I make to my webiste in real time.</li>
+    <li><strong>Gulp</strong> -- a build system used to compile the different tools and resources involved in my framework. In particular I use a lot of the piping/streaming capabilities to run tasks compiling SASS, and minifying code. I also use the Watch feature of Gulp in tandem with browserSync to see changes I make to my webiste in real time.</li>
     <li>browserSync -- a Gulp module that hosts your html on localhost:3000 for you to view as you're working. When used with the Watch feature of Gulp, it will refresh every time a change is made, showing you the effects of your most recent save in realtime.</li>
     <li>Nunjucks -- This is the templating language I chose in order to do things like partition my HTML into partials and layouts. This is the backbone behind achieving a framework that supports a modular framework. When writing a site, instead of copy/pasting common code for each HTML page, they can be written once, referenced and included in initial Nunjucks HTML code, and then compiled into a master HTML document via Gulp.</li>
     <li>SASS -- very commonly used/known. SASS is a CSS extension language designed to ease the amount of time developers spend on writing raw code.</li>
