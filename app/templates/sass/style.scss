@@ -1,21 +1,26 @@
 $primColor: #349155;
 $secColor: #84ba9f;
 $font: Tahoma;
+$navfootHeight: 30px;
 
 @import "./node_modules/scss-flex-grid/_flex-grid.scss";
 
 
 body {
+	height: 100%;
 	font-size: 100%;
 	font-family: Tahoma;
 }
 
 nav {
+	height: $navfootHeight;
 	position: fixed;
 	top:0;
 	left: 0;
 	width: 100%;
 	margin-bottom: 20px;
+	opacity: 0.8;
+
 
 	ul {
 		list-style-type: none;
@@ -36,13 +41,18 @@ nav {
 			padding: 10px;
 			display: block;
 			color: white;
+			text-decoration: none;
 			background-color: $primColor;
 			text-align: center;
-			-webkit-transition: background-color .5s;
-			transition: background-color .5s;
+			-webkit-transition: background-color .5s ease-in,
+				color .5s;
+			transition: background-color .5s, color .5s ease-in;
+
 
 			&:hover{
-				background-color: black;
+				background-color: white;
+				color: $primColor;
+
 			}
 		}
 	}
@@ -80,17 +90,12 @@ nav {
 
 footer {
 	position: fixed;
-	
-	margin-top: 20px;
-	width: 100%;
-	background-color: $primColor;
-	overflow: hidden;
+	height: $navfootHeight;
+	right: 0;
 	bottom: 0;
 	left: 0;
-
-
-	p {
-		float: left;
-		margin: 10px;
-	}
+	
+	background-color:$primColor;
+    color:white;
+    text-align:center;
 }
