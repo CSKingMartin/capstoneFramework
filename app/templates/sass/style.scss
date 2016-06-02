@@ -11,26 +11,36 @@ body {
 }
 
 nav {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 20px;
+
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		background-color: $primColor;
 		overflow: hidden;
-		border-radius: 5px;
 	}
 
 	li {
 		display: inline;
 		background-color: $primColor;
+		margin: 0;
+		padding: 0;
 	
 		float: left;
 
 		a {
-			padding: 15px;
+			padding: 10px;
 			display: block;
 			color: white;
+			background-color: $primColor;
 			text-align: center;
+			-webkit-transition: background-color .5s;
+			transition: background-color .5s;
+
 			&:hover{
 				background-color: black;
 			}
