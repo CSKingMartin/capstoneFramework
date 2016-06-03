@@ -1,0 +1,28 @@
+nav {
+	position: relative;
+	opacity: 0.8;
+	background-color: $primColor;
+
+
+	ul {
+		list-style-type: none;
+		overflow: hidden;
+		backgroud-color: $primColor;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+
+	}
+
+	li {
+		background-color: $primColor;
+		float: left;
+
+
+		a {
+			text-decoration: none;
+			background-color: $primColor;
+
+		}
+	}
+}
