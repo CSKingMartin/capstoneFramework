@@ -25,7 +25,6 @@ gulp.task('nunjucks', function() {
 	// render template with nunjucks
 	.pipe(nunjucksRender({
 		path: ['src/templates/','src/templates/partials/'],
-		data: { css_path: 'src/stylesheets/*.scss'}
 	}))
 	// output files in 'dist' directory
 	.pipe(gulp.dest('dist'))
@@ -71,8 +70,8 @@ gulp.task('default', function(done) {
 gulp.task('watch', ['default', 'browserSync'], function(){
 	gulp.watch('src/templates/**/*.html',['default'],
 	['browserSync']);
-	gulp.watch('src/pages/**/*.html', ['default'], ['browserSync']);
-	gulp.watch('src/stylesheets/**/*.+(scss|css)', ['default'], ['browserSync']);
+	gulp.watch('src/pages/**/*.html', ['default']);
+	gulp.watch('src/stylesheets/**/*.+(scss|css)', ['default']);
 });
 
 //browserSync

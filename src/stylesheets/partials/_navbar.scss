@@ -1,28 +1,32 @@
 nav {
-	position: relative;
+	position: fixed;
 	opacity: 0.8;
 	background-color: $primColor;
+	left:0;
+	right:0;
+	top:0;
 
-
+	
 	ul {
-		list-style-type: none;
-		overflow: hidden;
 		backgroud-color: $primColor;
-		overflow: hidden;
 		padding: 0;
-		margin: 0;
-
+		margin:0;
 	}
 
 	li {
 		background-color: $primColor;
-		float: left;
-
-
+		padding: 10px;
 		a {
 			text-decoration: none;
+			text-align: center;
 			background-color: $primColor;
+			color: $secColor;
+			padding: 5px;
 
 		}
+
+
+
+
 	}
 }
