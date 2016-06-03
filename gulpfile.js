@@ -18,11 +18,11 @@ gulp.task('nunjucks', function() {
 
 	console.log('Compiling HTML');
 
-	return gulp.src('app/pages/**/*.html')
+	return gulp.src('src/pages/**/*.html')
 	// render template with nunjucks
 	.pipe(nunjucksRender({
-		path: ['app/templates/','app/templates/partials/'],
-		data: { css_path: 'app/templates/style.css'}
+		path: ['src/templates/','src/templates/partials/'],
+		data: { css_path: 'src/templates/style.css'}
 	}))
 	// output files in 'dist' directory
 	.pipe(gulp.dest('dist'))
@@ -44,7 +44,7 @@ gulp.task('styles', function(){
 
 	console.log('Compiling CSS')
 
-	return gulp.src('app/templates/sass/*.scss')
+	return gulp.src('src/templates/sass/*.scss')
 		//compiles sass
 		.pipe(sass().on('error', sass.logError))
 		//minivfies css
@@ -70,9 +70,9 @@ gulp.task('default', function(done) {
 
 //watch task
 gulp.task('watch', ['default', 'browserSync'], function(){
-	gulp.watch('app/templates/**/*.+(scss|html)',['default'],
+	gulp.watch('src/templates/**/*.+(scss|html)',['default'],
 	['browsersync']);
-	gulp.watch('app/pages/**/*.html', ['default'])
+	gulp.watch('src/pages/**/*.html', ['default'])
 });
 
 //browsersync
