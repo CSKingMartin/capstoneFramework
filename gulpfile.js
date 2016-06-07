@@ -68,13 +68,13 @@ gulp.task('moveImages', function() {
 	.pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('moveArticles', function() {
-	gulp.src('./src/articles/**/*.*')
-	.pipe(gulp.dest('dist/articles'));
-});
+// gulp.task('moveArticles', function() {
+// 	gulp.src('./src/articles/**/*.*')
+// 	.pipe(gulp.dest('dist/articles'));
+// });
 
 gulp.task('move', function(done) {
-	sequence('moveImages', 'moveArticles', done);
+	sequence('moveImages', done);
 });
 
 //default task

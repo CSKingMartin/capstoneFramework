@@ -1,18 +1,3 @@
 @import 'vendor/_flex-grid.scss','modules/default','partials/navbar',
-'partials/footer', 'partials/content';
+'partials/footer', 'partials/content', 'partials/banner';
 
-.center {
-
-	width: 70%;
-	padding: 0px;
-	text-align: center;
-}
-
-.wrapper{
-	margin-bottom: 100px;
-}
-
-html, body {
-	height: 100%;
-
-}
