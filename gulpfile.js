@@ -6,6 +6,7 @@ var sequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var ccsmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
+var data = require('gulp-data');
 
 gulp.task('test', function(){
 	console.log('Congratulations! Gulp is working correctly!');
@@ -18,16 +19,16 @@ gulp.task('nunjucks', function() {
 	/*Nunjucks is the tool that takes the Nunjucks part of our HTML code
 	(the partials, modules, and blocks) and compiles them into a single
  	HTML document in the 'dist' directory for deployment. */
-
-	console.log('Compiling HTML');
-
 	return gulp.src('src/pages/**/*.html')
+	.pipe(data(function() {
+		return require('./data.json')
+	}))
 	// render template with nunjucks
 	.pipe(nunjucksRender({
-		path: ['src/templates/','src/templates/partials/'],
+		path: ['src/templates/','src/templates/partials/', 'src/articles/']
 	}))
 	// output files in 'dist' directory
-	.pipe(gulp.dest('dist'))
+	.pipe(gulp.dest('dist/'))
 	//refresh the browser with updated HTML file
 	.pipe(browserSync.reload({
 		stream: true
@@ -60,10 +61,26 @@ gulp.task('styles', function(){
 		}));
 });
 
+//moves images and articles
+gulp.task('moveImages', function() {
+
+	gulp.src('./src/images/**/*.*')
+	.pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('moveArticles', function() {
+	gulp.src('./src/articles/**/*.*')
+	.pipe(gulp.dest('dist/articles'));
+});
+
+gulp.task('move', function(done) {
+	sequence('moveImages', 'moveArticles', done);
+});
+
 //default task
 gulp.task('default', function(done) {
 	//default task compiles for dev
-	sequence('nunjucks', 'styles', done);
+	sequence('nunjucks', 'styles', 'move', done);
 });
 
 //watch task
@@ -72,6 +89,8 @@ gulp.task('watch', ['default', 'browserSync'], function(){
 	['browserSync']);
 	gulp.watch('src/pages/**/*.html', ['default']);
 	gulp.watch('src/stylesheets/**/*.+(scss|css)', ['default']);
+	gulp.watch('./data.json', ['default']);
+	gulp.watch('src/articles/**/*.html',['default']);
 });
 
 //browserSync
@@ -82,4 +101,5 @@ gulp.task('browserSync', function()	{
 		}
 	})
 });
+
 
