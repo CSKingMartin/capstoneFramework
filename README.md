@@ -1,10 +1,19 @@
-# frameworkProject
+# frameworkProject (codename: sinfulCat)
 This project serves as the hub for my Senior Capstone project. As a part of earning my degree in Computer Science at Linfield College, I'm required to submit a final project (this). 
 
-tl;dr: This project contains (or will contain) all the documentation and framework to support a new strain of curriculum for Linfield's Computer Science Department. After having taken a class at Linfield the Spring of 2016 on Web Development and participating in a Front End Development internship shortly afterwards, the technology and practices taught were noticably lacking. The goals of this project are to help not only teach foundational skills in HTML, CSS, and Javascript (a Holy Trinity of Sorts), but to also develop skills at: researching, choosing, and implementing new technologies for personal and large projects; standard FED practices such as SMACSS, Object Oriented CSS, and modularization; and high-level Javascript proficiency and familiarity with modern development tools such as Node.js, Gulp, and templating languages.
+<strong>tl;dr:</strong> This project contains (or will contain) all the documentation and framework to support a new strain of curriculum for Linfield's Computer Science Department. 
+
+After having taken a class at Linfield the Spring of 2016 on Web Development and participating in a Front End Development internship shortly afterwards, the technology and practices taught were noticably lacking. The goals of this project are to help not only teach foundational skills in HTML, CSS, and Javascript (a Holy Trinity of Sorts), but to also develop skills at: 
+<ul>
+<li>researching, choosing, and implementing new technologies for personal and large projects;</li>
+<li>standard FED practices such as SMACSS, Object Oriented CSS, and modularization;</li>
+<li>high-level Javascript proficiency and familiarity with modern development tools such as Node.js, Gulp, and templating languages.</li>
+</ul>
 
 #Origin:
-I've just signed on as an intern at ConnectiveDX, a web dev/software dev company in Portland, OR. (https://www.connectivedx.com/) Their first task for me has been to create a Web Framework for myself, and build a website from said framework so that I can be able to find my way around the tools and process involved for future company projects I'll be working on.
+Over the Summer of 2016, I've participated in an internship at Connective DX in Portland, OR (for more information about Connective, see https://www.connectivedx.com/). Their first task for me has been to create a Web Framework for myself, and build a website from said framework so that I would become familiar with common tools at they (and the industry as a whole) use. 
+
+That jumpstarted a great journey of new technologies for me, and I found myself wishing that more students at Linfield would be able to harness this kind of educational experience. Thus spawned this idea, that my Capstone would be just that. Design a Framework and corresponding Curriculum to be able to bring most of what I learn here at Connective 'home.'
 
 
 #What I'm using:
