@@ -30,16 +30,8 @@ If our curriculum is modular, that means that our Framework also needs to be des
 Tools that are included in <strong>sinfulCat</strong> should be chosen carefully and only if they serve as the vehicle for the curriculum. These tools need to inform and build good basic skills in HTML, CSS, and Javascript, as well as encourage modularization. 
 
 *<strong>Gulp</strong> -- a build system used to compile the different tools and resources. Extremely valuable for workflow -- good for and end-project module or teachings in a subsequent class in Advanced Javascript maybe? Gulp needs to be used at the start, if not solely for the 'Watch' functionality. Also can be used as a vehicle to encourage moving folders to a 'dist' folder. Easy setup for deploy to Github Pages?</li>
-    
-*<li>browserSync -- a Gulp module that hosts your html on localhost:3000 for you to view as you're working. When used with the Watch feature of Gulp, it will refresh every time a change is made, showing you the effects of your most recent save in realtime. Paired with Gulp's watch as stated above.</li>
-
-*<li><strong>Templating Languages (?)</strong> -- Templating Languages would be included at a later time. They do help encourage the 'modularization' idea, but they also can cause serious problems with over-extension. My experiences had me using a templating language pretty frivilously to the point where it became pretty useless/irrelevant. It just made things hard to find.</li>
-    
-*<li><strong>SASS</strong> -- very commonly used/known. SASS is a CSS extension language designed to ease the amount of time developers spend on writing raw code. I think this is a good include. It definitely works towards the goal of modularization and is very widely used. Brings in a lot of the 'object oriented' thinking that carries over from Programming courses.</li>
-
-*<li><strong>run-Sequence</strong> -- Could have a place, not necessary at current time.</li>
-
-*<li><strong>Third Party Packages</strong> -- some 3rd party CSS allows for quick templating and experiements on websites. Admittely, this might be a huge resource for students to be able to really dig into what's important in this class. It doesn't have to be just flat build everything.</li>
-
-
-
+*<strong>browserSync</strong> -- a Gulp module that hosts your html on localhost:3000 for you to view as you're working. When used with the Watch feature of Gulp, it will refresh every time a change is made, showing you the effects of your most recent save in realtime. Paired with Gulp's watch as stated above.</li>
+*<strong>Templating Languages (?)</strong> -- Templating Languages would be included at a later time. They do help encourage the 'modularization' idea, but they also can cause serious problems with over-extension. My experiences had me using a templating language pretty frivilously to the point where it became pretty useless/irrelevant. It just made things hard to find.
+*<strong>SASS</strong> -- very commonly used/known. SASS is a CSS extension language designed to ease the amount of time developers spend on writing raw code. I think this is a good include. It definitely works towards the goal of modularization and is very widely used. Brings in a lot of the 'object oriented' thinking that carries over from Programming courses.
+*<strong>run-Sequence</strong> -- Could have a place, not necessary at current time.
+*<strong>Third Party Packages</strong> -- some 3rd party CSS allows for quick templating and experiements on websites. Admittely, this might be a huge resource for students to be able to really dig into what's important in this class. It doesn't have to be just flat build everything.
