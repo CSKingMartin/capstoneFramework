@@ -15,7 +15,17 @@ Over the Summer of 2016, I've participated in an internship at Connective DX in 
 
 That jumpstarted a great journey of new technologies for me, and I found myself wishing that more students at Linfield would be able to harness this kind of educational experience. Thus spawned this idea, that my Capstone would be just that. Design a Framework and corresponding Curriculum to be able to bring most of what I learn here at Connective 'home.'
 
+#Goals:
+There are a few key pieces to the Curriculum that I want included. The learning process should be modular -- that is tha tyou add one piece at a time to a current project. Tasks (projects?) could be given that are more complex in sequence. This gives the understanding from the students of <strong>why</strong> not using the next learned tool would have significant drawbacks or shortcomings. One of the key things I didn't care for about COMP405 was the fact that we as inexperienced students did not have a single clue as to <strong>why</strong> we were being told to use these new tools. It was fast, indeed, but too much of it was just "follow me and let magic happen." At our pacing we didn't have a need for the tools we were given. This curriculum should create a need for each tool, so that the student appreciates and values what they are learning.
 
+If our curriculum is modular, that means that our Framework also needs to be designed modular. The barebones start should be static pure HTML and CSS (similar to the current start to COMP405). You should then be able to add more Node Packages, use SCSS, add Templating Languages in pieces, and have them all work together. Implementing this could be a bitch and a half. 
+<ul>
+<li>Idea -- sequential repositories that could be cloned? Could be a version control system -- cloning specific versions. Versions would have corresponding modules.</li>
+<li>Master directory could include folders of EVERY module, the src folder could be transferrable between each 'framework.'</li>
+<li>Use NPM for different pieces -- just download and go?</li>
+<li>Automated update of Gulp tasks?</li>
+</ul>
+   
 #What I'm using:
 I was pretty much given an open sandbox to create whatever I wanted, proviced that it was working towards building a web development
 framework that would come close to emulating some of the functions of ConnectiveDX's existing Phoenix framework:
