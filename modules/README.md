@@ -1,5 +1,4 @@
 #Sections:
-
 <ul>
   <li>
     <h3>Module 1: Basic HTML/CSS</h3>

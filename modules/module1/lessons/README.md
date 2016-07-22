@@ -1,4 +1,4 @@
-#Lessons
+#Lessons for Module 1
 
 <h2>Ideas</h2>
 <h3>1. Basic HTML and CSS:</h3>
