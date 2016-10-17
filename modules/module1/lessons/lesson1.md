@@ -1,12 +1,12 @@
 #Lesson 1 -- Getting Set Up and Experimenting
 
-<h3>Welcome to COMPxxx</h3>
+<h3>Welcome to Beginning Front-End Development</h3>
 
 This course is all designed to help teach skills for Front End web development, or FED. There are more pieces to Web Development then just the front end, but oftentimes in order to have a small personal site, there isn't a large need for the back end parts. 
 
-There are generally two parts to a development stack. The front end, which builds the front-facing markup. This is also referred to as client-side development, or the presentation layer. The back end deals with the server-side elements, like how the database talks to the web application and server. 
+There are generally two parts to a development stack. The front end, which builds the front-facing markup. This is also referred to as client-side development, or the presentation layer. The back end deals with the server-side elements, for example how a database talks to a web application and or server. 
 
-The key tools we'll be learning to use for Front End Development are HTML, CSS, and Javascript. You don't need to have had any previous programming experience to learn these tools. Lots of the language is simply putting containers around what content you want to share, and then writing rules to control where those containers go and how they look. 
+The key tools we'll be learning to use for Front End Development are HTML, CSS, and Javascript. You don't need to have had any previous programming experience to learn these tools. Lots of what you write on a webpage is simply putting containers around what content you want to share, and then writing rules to control where those containers go and how they look. 
 
 <h3>Foward</h3>
 
@@ -14,7 +14,11 @@ Before we get too far, take a look at the following link:
 
 https://justinjackson.ca/words.html
 
-Talk about the inherit operation of web development. Talk about 'masterbation.' Reference Evan.
+I like to look at this opinion because I think it's very important. Jackson makes an important distinction on the purpose of Web Content being a service to users. The Content is what the user is there for. If the design and implementation of a website to display that content -- whether it be products or news or music -- hinders the consumer it's not useful. Websites need to be accessible. If they are too cluttered, or complex, or slow, then they're not helping anyone.
+
+In addition to that thinking, it's important to note that sometimes the Web Development on a page is a part of the content. Images, animations, colors, brand logos, and other parts that could be considered markup may be extremely important to the identity of the content. In that case, having a website as bare as Jackson's article could be an inefficient use of the Internet as a media channel.
+
+As we pursue learning about design, it's good to keep dissenting opinions like this in mind. We want our webpages to look good, but they need to be readable and accessible to every user. 
 
 <h3>Needed Downloads</h3>
 
