@@ -12,7 +12,9 @@ gulp.task('build', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('src/**/*.*', function(){
+
 		browserSync.reload();
+		gulp.run('build');
 	})
 });	
 

@@ -24,20 +24,27 @@ As we pursue learning about design, it's good to keep dissenting opinions like t
 
 In order to make the learning process easier, we are going to use a preconfigured framework that will help us experiment with writing basic HTML and CSS, and will then move us towards writing good HTML and CSS.
 
-***Need the actual process, won't be in place until framework is finished.***
+Github is a great host for versioning, and we'll learn lots more about that later. For now, you are all going to clone into a repository that I have set up on Github and get the stuff you need.
 
-<h5>Bits and Bobs</h5>
-<ul>
-	<li>Gitbash</li>
-	<li>sinfulCat</li>
-	<li>Node.js</li>
-	<li>???</li>
-	<li>Profit!</li>
-</ul>
+Open up Terminal or Gitbash and type:
+
+<pre>git clone https://github.com/cskingmartin/capstoneFramework</pre>
+
+This will start the download process.
+
+After that type:
+
+<pre>npm install</pre>
+
+This install will take a few minutes, so be patient.
+
+For any code writing you will need a text-editor. Word processors like Microsoft Word aren't useful to us, we need an additional program. I recommend using SublimeText3, it's a popular industry standard editor. Notepad++ is also an option, but I prefer SublimeText because it highlights code for you based on the language you're using making it easy to read, and allows you to add support for more languages to boot.
+
+You can find the download for SublimeText <a href= "https://www.sublimetext.com/3">here</a>.
+
+The download for Notepad++ is <a href="https://notepad-plus-plus.org/download/v7.1.html">here</a>.
 
 <h3>Getting Started</h3>
-
-(After sinfulCat is downloaded)
 
 There are quite a few files you'll see in your directory here. The 'modules' folder contains all of the lesson plans, so if you ever miss a session or want to work ahead you can look there for the course content. The .gitignore and package.json files you probably won't touch, they're configuration files for Github and for the NPM modules. 
 
@@ -55,6 +62,10 @@ Go ahead and take a look at the content of the 'index.html' file we just opened.
 Let's make a small change to this document; add some text somewhere and then either reopen it or refresh the page on the browser. 
 
 Voila! Easy-peasy. 
+
+Notice that it added the text on the page in a way that corresponds with the rest of the document. If you put it after the "Welcome Student!" text, it shows up after on the page and vice versa. 
+
+If you were to 
 
 
 <h3>Disclaimer</h3>
