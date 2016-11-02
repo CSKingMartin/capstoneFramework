@@ -20,13 +20,13 @@ Here's an example of a generic webpage:
 
 The chevrons or angle brackets help designate a new object on our page. These are called tags. Some of these tags have predefined rules that go along with them. For example, the <!DOCTYPE html> at the very top of the page isn't something that is visible to our users. But it must be the start to your page. This will tell the browser what version of HTML is being used so that it will be decoded and displayed correctly.
 
-The <html> tag after that designates the start of the page that will be displayed. Within this tag, you can see that we specify the language. At the very bottom of the page when we've written everything on the page there will be a closing tag that looks like this: </html>. The '/' included at the front end of the closing tag sets it apart from the beginning. 
+The ```<html>``` tag after that designates the start of the page that will be displayed. Within this tag, you can see that we specify the language. At the very bottom of the page when we've written everything on the page there will be a closing tag that looks like this: ```</html>```. The '/' included at the front end of the closing tag sets it apart from the beginning. 
 
-Everything between these two tags inherits all of the rules that goes along with <html>. 
+Everything between these two tags inherits all of the rules that goes along with ```<html>```. 
 
-Following that is the <html>tag. 
+Following that is the ```<html>```tag. 
 
-At the very top of an HTML document are. Every webpage for the most part will have a <head> section, because there's more often than not crucial information within. 
+At the very top of an HTML document are. Every webpage for the most part will have a ```<head>``` section, because there's more often than not crucial information within. 
 
 
 
