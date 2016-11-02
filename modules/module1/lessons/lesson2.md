@@ -8,7 +8,6 @@ HTML is organized into sections which have predefined rules to go along with the
 
 Here's an example of a generic webpage:
 
-<pre>
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -17,7 +16,7 @@ Here's an example of a generic webpage:
 		<link rel="stylesheet" href="main.css"/>
 	</head>
 	...
-</pre>
+
 
 The chevrons or angle brackets help designate a new object on our page. These are called tags. Some of these tags have predefined rules that go along with them. For example, the <pre><!DOCTYPE html></pre> at the very top of the page isn't something that is visible to our users. But it must be the start to your page. This will tell the browser what version of HTML is being used so that it will be decoded and displayed correctly.
 
