@@ -28,7 +28,7 @@ Github is a great host for versioning, and we'll learn lots more about that late
 
 Open up Terminal or Gitbash and type:
 
-<pre>git clone https://github.com/cskingmartin/capstoneFramework</pre>
+<pre>git clone https://github.com/cskingmartin/sinfulCat</pre>
 
 This will start the download process.
 
@@ -54,7 +54,7 @@ As you can see in our 'src' folder, there's already some files in there. Go ahea
 
 It's nothing special, but all the content of webpages come from '.html' files paired with '.css' and '.js' files to organize content for the viewing pleasure of many.
 
-Like all code, all of the documents come down to beng just text. Thankfully we have better tools than Microsoft Word for writing code. Open up Sublime Text -- then under 'File' select 'Open Folder.' Find in your directory wherever you put the 'sinfulCat' repo and open that folder.
+Like all code, all of the documents come down to being just text. Thankfully we have better tools than Microsoft Word for writing code. Open up Sublime Text -- then under 'File' select 'Open Folder.' Find in your directory wherever you put the 'sinfulCat' repo and open that folder.
 
 On the left, you can now see all of our files just like we can in Windows Explorer or Finder. 
 
@@ -65,10 +65,9 @@ Voila! Easy-peasy.
 
 Notice that it added the text on the page in a way that corresponds with the rest of the document. If you put it after the "Welcome Student!" text, it shows up after on the page and vice versa. 
 
-If you were to 
+As simple as that we can build websites. We can use a simple text editor and write the markup from scratch. This can get cumbersome after a while, as you can imagine. Open up a website of your choosing and hit F12 on Windows or alt-command-i on a Mac.
+
+However, as you can see, writing straight markup is challenging and there are a lot of complex parts. This is time consuming and not necessary! Hopefully throughout this course you can learn all of the basic elements of HTML and CSS to begin writing your own web pages. In addition to that, this framework should help speed up that process immensely, and allow you to hit the ground running.
 
 
-<h3>Disclaimer</h3>
-
-tl;dr -- do whatever you want, but try and understand everything FULLY and COMPELTELY
 
