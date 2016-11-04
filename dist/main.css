@@ -9,6 +9,8 @@
   color: green;
   -webkit-transition: background-color .5s ease-in, color .5s;
   transition: background-color .5s, color .5s ease-in; }
+  .button .button_name {
+    color: black; }
   .button:focus {
     outline: 0; }
   .button:hover {

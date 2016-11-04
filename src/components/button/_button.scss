@@ -16,6 +16,10 @@
 	-webkit-transition: background-color .5s ease-in, color .5s;
 	transition: background-color .5s, color .5s ease-in;
 
+	.button_name {
+		color: black;
+	}
+
 
 	&:focus {
 		outline:0;
