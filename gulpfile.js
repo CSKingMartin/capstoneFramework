@@ -30,7 +30,7 @@ gulp.task('bs',['watch'], function(){
 gulp.task('hb', function(){
 	gulp.src('./src/index.hbs')
 	    .pipe(handlebars({contents:"whatever"}, {
-	        partials: gulp.src('./src/components/**/*.hbs')
+	        partials: gulp.src('./src/**/*.hbs')
 	    }))
 	    .pipe(rename('index.html'))
 	    .pipe(gulp.dest('./dist'));
