@@ -14,12 +14,14 @@ Each lesson will introduce a new tool to use, and I've included several examples
 
 In our gulpfile right now, you should see only two tasks that aren't commented out. The first one at the top called 'default' is what we ran at the end of the last lesson. I used it in this instance to test, but essentially the task that is titled 'default' in your gulpfile will be ran if you simply type 'gulp' in your CLI. 
 
-<h3>BrowserSync</h3>
+<h3>Gulp Tasks</h3>
 
 If there's a tool in this framework that's the most useful it'll probably be BrowserSync. Thankfully this tool is also extremely easy to undrstand and use. So let's get to it.
 
 The second two tasks in the gulpfile is called 'watch' and 'bs'. 
 The 'watch' task that monitors all of your files. If you save any changes to the files, it will proc whatever tasks it was designed to run after. In this case it will refresh the browser with BrowserSync to show the changes you make in realtime. 
+
+<h3>Watch</h3>
 
 ```
 gulp.task('watch', function() {
@@ -33,6 +35,8 @@ gulp.task('watch', function() {
 As seen here, you can see the directory that it watches. 'src/**/*.*' refers to all files in all folders from the 'src' root. This is called 'globbing.'
 
 ![alt text](https://camo.githubusercontent.com/d0cccd8d3b074fd523d8de7d126994b6f87b718a/687474703a2f2f692e696d6775722e636f6d2f37766a4f326d462e676966 "Globby Glob")
+
+<h3>BrowserSync</h3>
 
 ```
 gulp.task('bs',['watch'], function(){
