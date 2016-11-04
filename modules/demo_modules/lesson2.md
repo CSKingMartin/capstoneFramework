@@ -32,7 +32,7 @@ gulp.task('watch', function() {
 ```
 As seen here, you can see the directory that it watches. 'src/**/*.*' refers to all files in all folders from the 'src' root. This is called 'globbing.'
 
-<img>https://camo.githubusercontent.com/d0cccd8d3b074fd523d8de7d126994b6f87b718a/687474703a2f2f692e696d6775722e636f6d2f37766a4f326d462e676966</img>
+![alt text](https://camo.githubusercontent.com/d0cccd8d3b074fd523d8de7d126994b6f87b718a/687474703a2f2f692e696d6775722e636f6d2f37766a4f326d462e676966 "Globby Glob")
 
 ```
 gulp.task('bs',['watch'], function(){
