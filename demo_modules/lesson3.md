@@ -84,11 +84,50 @@ This provides high incentive to create our own classes. We can implement solutio
 Custom classes use the ```div``` tag, followed by the class selector like so:
 
 ```
-<div class="button">
+//HTML
+<div class="button type1">
 
 	<p>Click Me</p>
 
 </div>
 
+<div class="button type2">
+	
+	<p>Click Me</p>
+
+</div>
+
 ```
+Notice we have two class selectors inside the div tag. This is technically a larger amount of code, but the amount of control that we earn is worth is. Additionally, later in the course we can implement more parts of the framework to make the bulk of our writing work go away anyways. 
+
+```
+//CSS
+
+.button {
+	color: white;
+	font-size: 1em;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+
+}
+
+.button.type1 {
+	background: green;
+}
+
+.button.type2 {
+	background: blue;
+}
+
+```
+Notice that there is a lot more code written in the ```.button``` class. The reason why, is because there were several rules prewritten for the built in button class. Using custom classes means that we have a bit more work to write, but we only have to write it once and we know exactly how our buttons will look and how they will behave. 
+
+Let's look at the screenshots for these examples:
+
+![figure 3.3](images/fig3.3.png)
+
+Our two different methods look relatively the same, and they both serve the same function. 
 

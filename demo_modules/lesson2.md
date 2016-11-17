@@ -35,7 +35,7 @@ gulp.task('watch', function() {
 ```
 As seen here, you can see the directory that it watches. 'src/**/*.*' refers to all files in all folders from the 'src' root. This is called 'globbing.' The double asterisk (**) is shorthand for every folder, the (*.*) is shorthand for every file with every extension. 
 
-![alt text](https://camo.githubusercontent.com/d0cccd8d3b074fd523d8de7d126994b6f87b718a/687474703a2f2f692e696d6775722e636f6d2f37766a4f326d462e676966 "Globby Glob")
+![globbing](https://camo.githubusercontent.com/d0cccd8d3b074fd523d8de7d126994b6f87b718a/687474703a2f2f692e696d6775722e636f6d2f37766a4f326d462e676966 "Globby Glob")
 
 When any of these files are modified, it runs the code inside of the ```gulp.watch()``` function. The function inside is a BrowserSync method (which is explained next).
 

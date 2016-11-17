@@ -28,7 +28,7 @@ gulp.task('bs',['watch'], function(){
 });
 
 gulp.task('hb', function(){
-	gulp.src('./src/index.hbs')
+	return gulp.src('./src/index.hbs')
 	    .pipe(handlebars({contents:"whatever"}, {
 	        partials: gulp.src('./src/**/*.hbs')
 	    }))
@@ -37,7 +37,7 @@ gulp.task('hb', function(){
 });
 	
 gulp.task('sass', function() {
-	gulp.src('./src/main.scss')
+	return gulp.src('./src/main.scss')
 	.pipe(sass())
 	.pipe(gulp.dest('./dist'))
 });
