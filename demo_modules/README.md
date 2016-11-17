@@ -1,5 +1,13 @@
-#Modules
+#Modules for COMP121 Demo
 
-The examples directory has different test websites showing examples of work for specific lessons.
+The modules included in this version of sinfulCat are not the full version. These are a selection of the lessons included in the end product that I think will be more helpful for students in COMP 121. 
 
-The lessons contains the different tutorials that can be found online at the github repo. It's recommended that users view the lessons online.
+Instead of covering the basic topics in HTML and CSS (which you can view from the Master branch), these topics cover teh basics in how to use this framework so it will hopefully make your life easier as you approach a final project.
+
+#Topics:
+
+1. Installation and Setting Up
+2. Beginning Gulp Tasks
+3. Custom Classes
+4. Templating Languages (HTML)
+5. SASS and SCSS
