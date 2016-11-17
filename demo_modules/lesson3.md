@@ -9,6 +9,7 @@ Modularizing code with these two languages looks like writing pieces of a puzzle
 The first part to writing these separate components is using custom classes. Let's start by making a button class for our site. Take a look at the example below:
 
 ```
+//HTML
 <button>
 
 	<p>Click Me</p>
@@ -16,9 +17,10 @@ The first part to writing these separate components is using custom classes. Let
 </button>
 ```
 
-This is some HTML and represents a button that uses the built in tags. This is fine, and we can easily write some CSS to help format this as well. 
+This is some HTML and represents a button that uses the built in tags. To reiterate: this is NOT a custom class. ```<button>``` already exists in the language. For simple solutions, this is a handy. We can easily write some CSS to help format this as well. 
 
 ```
+//CSS
 button {
 	background: green;
 }
@@ -40,20 +42,20 @@ If we want to have additional variations on buttons, our code can get a little m
 
 ```
 //HTML
-<button class="type1">
+<button id="type1">
 
 	<p>Click Me</p>
 
 </button>
 
-<button class="type2">
+<button id="type2">
 
 	<p>Click Me</p>
 
 </button>
 
 ```
-And our CSS file as well:
+Inside the tag we are using the ```id``` selector to specify which buttons the different rules (in this case colors) apply to. To specify this in CSS, we use the # key to make this distinction:
 
 ```
 //CSS
@@ -66,20 +68,25 @@ button:focus { //this gets rid of the focus highlight on the border
 	outline: none;
 }
 
-button.type1 {
+button#type1 {
 	background: green;
 }
 
-button.type2 {
+button#type2 {
 	background: blue;
 }
 
 ```
-Eventually this can create a whole lot of excess work for us to first, opt out of the original styling; and second, to write out "button.xxx" for every variation.
+Using the original tags can create a lot of excess work for us to opt out of the original styling and add variations between the differnt types of buttons we want. Using the id selector is similar enough to using the class selector to differentiate between types that it's difficult to justify not using custom classes. At a bare minimum by using anything that has rules applied to it by default, our locus of control shrinks which leaves room for error and uncertainty when we build our site. 
+
+This provides high incentive to create our own classes. We can implement solutions that in the long run will shrink the total amount of code we have to write, and we know exactly what rules will be applied to the class becuase we are writing everything from scratch. 
+
+Custom classes use the ```div``` tag, followed by the class selector like so:
 
 ```
 <div class="button">
-	
+
+	<p>Click Me</p>
 
 </div>
 
