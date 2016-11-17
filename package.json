@@ -1,7 +1,7 @@
 {
-  "name": "framework_project",
+  "name": "sinfulCat Framework",
   "version": "1.0.0",
-  "description": "My initial project at ConnectiveDX, building a personal custom web-framework.",
+  "description": "Senior Capstone Project by Conner Wells -- Linfield College",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1"
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cskingmartin/frameworkProject.git"
+    "url": "git+https://github.com/cskingmartin/sinfulCat.git"
   },
   "author": "cwells",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cskingmartin/frameworkProject/issues"
+    "url": "https://github.com/cskingmartin/sinfulCat/issues"
   },
-  "homepage": "https://github.com/cskingmartin/frameworkProject#readme"
+  "homepage": "https://github.com/cskingmartin/sinfulCat#readme"
 }
