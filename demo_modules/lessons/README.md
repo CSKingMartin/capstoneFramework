@@ -11,5 +11,3 @@ Instead of covering the basic topics in HTML and CSS (which you can view from th
 3. Custom Classes
 4. Templating Languages (HTML)
 5. SASS and SCSS
-
-
