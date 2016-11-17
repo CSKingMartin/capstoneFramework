@@ -2,16 +2,15 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var handlebars = require('gulp-static-handlebars');
 var rename = require('gulp-rename');
-var sass = require('gulp-sass');
 
 
 gulp.task('default', function() {
 	console.log("Congratulations, Gulp is successfully working.");
 });
 
-gulp.task('build',['hb', 'sass']);
+gulp.task('build',['hb', 'css']);
 
-gulp.task('watch', ['build'], function() {
+gulp.task('watch',['build'], function() {
 	gulp.watch('src/**/*.*', function(){
 
 		gulp.run('build');
@@ -36,9 +35,8 @@ gulp.task('hb', function(){
 	    .pipe(rename('index.html'))
 	    .pipe(gulp.dest('./dist'));
 });
-	
-gulp.task('sass', function() {
-	return gulp.src('./src/main.scss')
-	.pipe(sass())
-	.pipe(gulp.dest('./dist'))
+
+gulp.task('css', function() {
+	return gulp.src('./src/main.css')
+	.pipe(gulp.dest('./dist'));
 });
