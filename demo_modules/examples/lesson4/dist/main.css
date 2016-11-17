@@ -87,6 +87,16 @@ h5 {
       border-top: none; 
 }
 
+.layout * + * {
+      margin-top: 10px;
+}
+
+.content_block {
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+
 body {
   color: black; }
 
@@ -95,7 +105,7 @@ footer {
   bottom: 0; }
 
   .button {
-  min-width: 100px;
+  max-width: 150px;
   font-size: 1.125em;
   text-align: center;
   padding: 10px;
@@ -103,6 +113,8 @@ footer {
   border: none;
   cursor: pointer;
   color: white;
+
+  display: inline-block;
   -webkit-transition: background-color .5s ease-in, color .5s;
   transition: background-color .5s, color .5s ease-in; }
   .button .button_name {
@@ -113,36 +125,3 @@ footer {
     background-color: white;
     color: green; }
 
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: green;
-  width: 100%; }
-  ul.navbar li {
-    float: left;
-    height: 100%; }
-    ul.navbar li a {
-      width: 70px;
-      display: inline-block;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      padding: 10px 30px;
-      -webkit-transition: background-color .5s ease-in, color .5s;
-      transition: background-color .5s, color .5s ease-in; }
-      ul.navbar li a:hover {
-        background-color: white;
-        color: green; }
-    ul.navbar li.endItem {
-      float: right; }
-
-@media screen and (max-width: 1024px) {
-  ul.navbar {
-    float: center; }
-    ul.navbar li {
-      width: 50%; }
-      ul.navbar li a {
-        width: auto;
-        display: block; } }

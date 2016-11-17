@@ -1,10 +1,9 @@
 // main.scss
 
 @import
-"components/layout/layout",
+"layout",
 "reset",
-"components/button/button",
-"components/navbar/navbar";
+"components/button/button";
 
 body {
 	color: black;
