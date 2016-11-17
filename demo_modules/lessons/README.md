@@ -11,6 +11,5 @@ Instead of covering the basic topics in HTML and CSS (which you can view from th
 3. Custom Classes
 4. Templating Languages (HTML)
 5. SASS and SCSS
-6. Github and Version Control
-7. Deployment through Github Pages (gh-pages)
+
 
