@@ -8,8 +8,9 @@ Instead of covering the basic topics in HTML and CSS (which you can view from th
 
 1. Installation and Setting Up
 2. Beginning Gulp Tasks
-3. Templating Languages (HTML)
-4. SASS and SCSS
-5. Github and Version Control
-6. Deployment through Github Pages (gh-pages)
+3. Custom Classes
+4. Templating Languages (HTML)
+5. SASS and SCSS
+6. Github and Version Control
+7. Deployment through Github Pages (gh-pages)
 
