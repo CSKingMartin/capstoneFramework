@@ -6,6 +6,8 @@ This style of thinking and writing code is an extention of UNIX idealogy -- whic
 
 Modularizing code with these two languages looks like writing pieces of a puzzle which come together on the full site. If you can craft all of the code for your buttons, navbars, headers, and other reusable pieces then you can assemble your page with those prewritten parts. The work is all done beforehand, and instead of slaving away writing the same pieces over and over again, or using copy-paste a number of times for large sections you can devote minimal work to tedious tasks and more to the design side.
 
+<h3>Built in Tags</h3>
+
 The first part to writing these separate components is using custom classes. Let's start by making a button class for our site. Take a look at the example below:
 
 ```
@@ -80,6 +82,8 @@ button#type2 {
 Using the original tags can create a lot of excess work for us to opt out of the original styling and add variations between the differnt types of buttons we want. Using the id selector is similar enough to using the class selector to differentiate between types that it's difficult to justify not using custom classes. At a bare minimum by using anything that has rules applied to it by default, our locus of control shrinks which leaves room for error and uncertainty when we build our site. 
 
 This provides high incentive to create our own classes. We can implement solutions that in the long run will shrink the total amount of code we have to write, and we know exactly what rules will be applied to the class becuase we are writing everything from scratch. 
+
+<h3>Custom Classes</h3>
 
 Custom classes use the ```div``` tag, followed by the class selector like so:
 

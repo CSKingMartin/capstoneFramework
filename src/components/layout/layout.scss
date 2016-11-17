@@ -15,7 +15,7 @@
 		@media (min-width: 1000px) {
 			& > * { 
 				float: left;
-				margin-top: 1em;
+				margin-top: 0em;
 				&:nth-child(1) {width: 23%;}
 				&:nth-child(2) {width: 46%;}
 				&:nth-child(3) {width: 23%;}
@@ -26,7 +26,7 @@
 		}
 	}
 	&.layout-3wide {
-		margin-top: 1em;
+		margin-top: 0em;
 		@media (min-width: 1000px) {
 			& > * { 
 				float: left;

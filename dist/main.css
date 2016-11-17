@@ -8,7 +8,7 @@
   @media (min-width: 1000px) {
     .layout.layout-frame-wrapper > * {
       float: left;
-      margin-top: 1em; }
+      margin-top: 0em; }
       .layout.layout-frame-wrapper > *:nth-child(1) {
         width: 23%; }
       .layout.layout-frame-wrapper > *:nth-child(2) {
@@ -18,7 +18,7 @@
     .layout.layout-frame-wrapper > * + * {
       margin-left: 4%; } }
   .layout.layout-3wide {
-    margin-top: 1em; }
+    margin-top: 0em; }
     @media (min-width: 1000px) {
       .layout.layout-3wide > * {
         float: left;
@@ -139,6 +139,25 @@ h4 {
 h5 {
   font-size: 1em; }
 
+.button {
+  min-width: 100px;
+  font-size: 1.125em;
+  text-align: center;
+  padding: 10px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: background-color .5s ease-in, color .5s;
+  transition: background-color .5s, color .5s ease-in; }
+  .button .button_name {
+    color: black; }
+  .button:focus {
+    outline: 0; }
+  .button:hover {
+    background-color: white;
+    color: green; }
+
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -179,18 +198,3 @@ body {
 footer {
   position: absolute;
   bottom: 0; }
-
-.button {
-  color: white;
-  font-size: 1.3em;
-  width: 150px;
-  height: 50px;
-  text-align: center;
-  padding: 10px;
-  cursor: pointer; }
-
-.button.type1 {
-  background: green; }
-
-.button.type2 {
-  background: blue; }
