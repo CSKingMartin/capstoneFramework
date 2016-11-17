@@ -28,7 +28,7 @@ Travel to the location that you want your workplace to sit. I recommend that you
 
 To get the repository type:
 
-<pre>git clone https://github.com/cskingmartin/sinfulCat</pre>
+<pre>git clone -b demo https://github.com/cskingmartin/sinfulCat</pre>
 
 This will start the download process.
 
